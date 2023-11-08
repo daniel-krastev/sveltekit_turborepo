@@ -1,0 +1,23 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"clean": "turbo run clean && rm -rf .turbo node_modules",
+		"test": "turbo run test",
+		"test:unit": "turbo run test:unit",
+		"test:integration": "turbo run test:integration",
+		"lint": "turbo run lint",
+		"sorted": "turbo run sorted",
+		"check": "turbo run check",
+		"format": "turbo run format",
+		"sort": "turbo run sort"
+	},
+	"devDependencies": {
+		"turbo": "^1.10.16",
+		"prettier": "^3.0.3",
+		"prettier-plugin-svelte": "^3.0.3",
+		"prettier-plugin-tailwindcss": "^0.5.6"
+	},
+	"packageManager": "pnpm@8.9.2"
+}

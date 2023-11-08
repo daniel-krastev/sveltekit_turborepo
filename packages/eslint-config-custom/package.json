@@ -1,0 +1,20 @@
+{
+	"name": "eslint-config-custom",
+	"version": "0.0.1",
+	"private": true,
+	"main": "index.js",
+	"scripts": {
+		"clean": "rm -rf node_modules",
+		"format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss . && pnpx sort-package-json",
+		"lint": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --check --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss .",
+		"sort": "pnpx sort-package-json",
+		"sorted": "pnpx sort-package-json -c"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.62.0",
+		"@typescript-eslint/parser": "^5.62.0",
+		"eslint": "^8.50.0",
+		"eslint-config-prettier": "^8.10.0",
+		"eslint-plugin-svelte": "^2.34.0"
+	}
+}

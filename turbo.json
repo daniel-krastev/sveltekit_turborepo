@@ -1,0 +1,43 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": [".svelte-kit/**", ".vercel/**"],
+			"cache": false
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"clean": {
+			"cache": false
+		},
+		"test": {
+			"cache": false
+		},
+		"test:unit": {
+			"cache": false
+		},
+		"test:integration": {
+			"cache": false
+		},
+		"lint": {
+			"dependsOn": ["^build"],
+			"cache": false
+		},
+		"sorted": {
+			"cache": false
+		},
+		"check": {
+			"cache": false
+		},
+		"format": {
+			"dependsOn": ["^build"],
+			"cache": false
+		},
+		"sort": {
+			"cache": false
+		}
+	}
+}
